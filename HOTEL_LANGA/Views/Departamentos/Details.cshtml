@@ -1,0 +1,34 @@
+﻿@model HOTEL_LANGA.Models.Departamentos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes do Departamento</h2>
+
+<div>
+    <h4>Departamentos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeDepartamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeDepartamento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
